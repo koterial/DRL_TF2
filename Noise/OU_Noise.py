@@ -2,7 +2,7 @@ import numpy as np
 
 
 class OU_Noise():
-    def __init__(self, index, action_shape, mu=0, theta=0.15, std=0.25, dt=1e-2, scale=1, bound=1, decay=0.999):
+    def __init__(self, index, action_shape, mu=0, theta=0.15, std=0.25, dt=1e-2, scale=0.2, bound=0.2, decay=0.999):
         self.class_name = "OU"
         self.index = index
         self.action_shape = action_shape
@@ -32,6 +32,7 @@ class OU_Noise():
         return np.clip(self.state * self.scale, -1 * self.bound, self.bound)
 
     def bound_decay(self):
+        self.scale = max(self.scale * self.decay, 0.01)
         self.bound = max(self.bound * self.decay, 0.01)
 
 
