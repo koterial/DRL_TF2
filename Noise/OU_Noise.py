@@ -27,7 +27,7 @@ class OU_Noise():
     def get_noise(self):
         x = self.state
         # 第一部分为均值回归过程, 第二部分为布朗运动随机项
-        dx = self.theta * (self.mu - x) * self.dt + self.std * np.sqrt(self.dt) * np.random.normal(size=self.action_shape)
+        dx = self.theta * (self.mu - x) * self.dt + self.std * np.sqrt(self.dt) * np.random.normal(size=sum(self.action_shape))
         self.state = x + dx
         return np.clip(self.state * self.scale, -1 * self.bound, self.bound)
 

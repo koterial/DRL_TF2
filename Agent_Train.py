@@ -334,7 +334,7 @@ class Train():
                               actor_unit_num_list=self.actor_unit_num_list, actor_activation=self.actor_activation, actor_lr=self.actor_lr,
                               critic_unit_num_list=self.critic_unit_num_list, critic_activation=self.critic_activation, critic_lr=self.critic_lr,
                               update_freq=self.update_freq, actor_train_freq=self.actor_train_freq, gamma=self.reward_gamma, tau=self.tau,
-                              batch_size=self.batch_size, buffer_size=self.buffer_size, prioritized_replay = False,
+                              batch_size=self.batch_size, buffer_size=self.buffer_size, prioritized_replay=False,
                               adaptive_entropy_alpha=self.adaptive_entropy_alpha, entropy_alpha=self.entropy_alpha, entropy_alpha_lr=self.entropy_alpha_lr)
         return agent
 

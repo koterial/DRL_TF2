@@ -56,7 +56,7 @@ class Q_Critic():
 
 if __name__ == "__main__":
     import numpy as np
-    critic = Q_Critic([35], [6, 6, 6], [32, 32, 32], [1], "linear")
+    critic = Q_Critic(state_shape=[35], action_shape=[6, 6, 6], value_shape=[1], unit_num_list=[32, 32, 32], activation="linear")
     state_batch = np.random.uniform(size=(128, 35))
     action_batch = np.random.uniform(size=(128, 18))
     summary_writer = tf.summary.create_file_writer("Demo/Q_Critic/")

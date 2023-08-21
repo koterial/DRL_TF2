@@ -22,7 +22,7 @@ class Gaussian_Noise():
         self.state = self.mu * np.ones(shape=self.action_shape)
 
     def get_noise(self):
-        self.state = np.random.normal(self.mu, self.std, size=self.action_shape)
+        self.state = np.random.normal(self.mu, self.std, size=sum(self.action_shape))
         return np.clip(self.state * self.scale, -1 * self.bound, self.bound)
 
     def bound_decay(self):

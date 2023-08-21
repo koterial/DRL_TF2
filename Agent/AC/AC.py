@@ -154,7 +154,7 @@ class AC_Actor(Actor):
 
 class AC_Critic(Critic):
     def __init__(self, agent_index, state_shape, unit_num_list, activation, lr, clip_norm):
-        super().__init__(state_shape=state_shape, unit_num_list=unit_num_list, value_shape=[1], activation=activation)
+        super().__init__(state_shape=state_shape, value_shape=[1], unit_num_list=unit_num_list, activation=activation)
         self.agent_index = agent_index
         self.lr = lr
         self.clip_norm = clip_norm
