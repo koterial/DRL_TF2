@@ -11,9 +11,10 @@ or
   author={Zhao, Junhui and Quan, Haoyu and Xia, Minghua and Wang, Dongming},
   journal={IEEE Transactions on Vehicular Technology}, 
   title={Adaptive Resource Allocation for Mobile Edge Computing in Internet of Vehicles: A Deep Reinforcement Learning Approach}, 
-  year={2023},
-  volume={},
-  number={},
-  pages={1-15},
+  year={2024},
+  volume={73},
+  number={4},
+  pages={5834-5848},
+  keywords={Resource management;Task analysis;Optimization;Delays;Adaptive systems;Vehicle dynamics;Uplink;Mobile edge computing (MEC);Internet of Vehicles (IoV);adaptive joint resource allocation;deep reinforcement learning (DRL)},
   doi={10.1109/TVT.2023.3335663}}
 ```
