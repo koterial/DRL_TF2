@@ -3,7 +3,7 @@ Common Deep Reinforcement Learning (DRL) algorithms based on Tensorflow2 and sup
 
 If possible, please cite:<br/>
 ```
-J. Zhao, H. Quan, M. Xia and D. Wang, "Adaptive Resource Allocation for Mobile Edge Computing in Internet of Vehicles: A Deep Reinforcement Learning Approach," in IEEE Transactions on Vehicular Technology, doi: 10.1109/TVT.2023.3335663.
+J. Zhao, H. Quan, M. Xia and D. Wang, "Adaptive Resource Allocation for Mobile Edge Computing in Internet of Vehicles: A Deep Reinforcement Learning Approach," in IEEE Transactions on Vehicular Technology, vol. 73, no. 4, pp. 5834-5848, April 2024, doi: 10.1109/TVT.2023.3335663.
 ```
 or
 ```
